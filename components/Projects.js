@@ -6,6 +6,7 @@ const LinkButton = ({title, href}) => {
       className='w-32 px-10 py-3 bg-word rounded-xl text-secondary text-xl font-bold focus:outline-none'
       href= {href}
       target="_blank"
+      rel="noreferrer"
     >
       {title}
     </a>
@@ -13,11 +14,10 @@ const LinkButton = ({title, href}) => {
 }
 
 const Post = ({post}) => {
-  const { title, description, image, live, repo, reverse } = post
-  const flexReverse = reverse ? 'flex-row-reverse' : 'flex-row'
+  const { title, description, image, live, repo } = post
   return (
-    <div className={`flex flex-col lg:${flexReverse} justify-evenly py-10`}>
-      <img className='bg-secondary border lg:w-5/12 opacity-70' src={image} />
+    <div className={`flex flex-col lg:flex-row justify-evenly py-10`}>
+      <img className='bg-secondary border lg:w-5/12 opacity-70' src={image} alt={image}/>
       <div className='lg:w-1/2 pl-4 pt-4 lg:pt-0 flex flex-col justify-center'>
         <h1 className='text-primary-dark text-center lg:text-left text-3xl font-bold tracking-tighter'>{title}</h1>
         <p className='text-primary pt-4'>

@@ -29,7 +29,7 @@ const LandingPage = (props) => {
           <div className={cn(s.catch3, 'flex flex-col items-center pt-16')}>
             <h2 className='text-md lg:text-lg text-secondary-dark'>See more about me.</h2>
             <div className='pt-4 animate-arrowDown' onClick={props.scrollDown}>
-              <FontAwesomeIcon icon={faAngleDoubleDown} size='3x' className='text-secondary-dark h-4 cursor-pointer'/>
+              <FontAwesomeIcon icon={faAngleDoubleDown} size='6x' className='text-secondary-dark h-6 cursor-pointer'/>
             </div>
           </div>
         </div>

@@ -10,14 +10,14 @@ const Footer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} size='6x' className='text-secondary h-4 cursor-pointer'/>
+          <FontAwesomeIcon icon={faLinkedin}  className='text-secondary h-6 cursor-pointer'/>
         </a>
         <a
           href="https://github.com/daniel-chum"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithubSquare} size='6x' className='text-secondary h-4 cursor-pointer'/>
+          <FontAwesomeIcon icon={faGithubSquare}  className='text-secondary h-6 cursor-pointer'/>
         </a>
       </div>
       <p className='text-center font-semibold'>szewen.chum@gmail.com</p>
